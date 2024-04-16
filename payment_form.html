@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <form action="">
+        <h1 class="mainheading">Payment Form</h1>
+        <hr>
+        <h2>Contact Information</h2>
+        <!--use the attribute 'required' to make the input field compulsory-->
+        <div>Name: <input type="text" name="name" required placeholder="Enter name"></div>
+        <br>
+        <fieldset>
+            <legend>Gender</legend>
+            <p>
+                <input type="radio" name="gender" id="male" required>Male
+                <br>
+                <input type="radio" name="gender" id="female" required>Female
+                <br>
+                <input type="radio" name="gender" id="other" required>Other
+            </p>
+        </fieldset>
+        <br>
+        <div>Address: <textarea name="address" id="address" cols="80" rows="7" placeholder="Enter your address"></textarea></div>
+        <br>
+        <div>Email: <input type="email" name="email" id="email" required placeholder="xyz@gmail.com"></div>
+        <br>
+        <div>Pincode: <input type="number" name="pincode" id="pincode" required inputmode="numeric"></div>
+        <br>
+        <h2>Payment Information</h2>
+        <div>Card type: 
+            <select name="card_type" id="card_type" required>
+                <option value="">--Select a Card type--</option>
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="rupay">Rupay</option>
+            </select>
+        </div>
+        <br>
+        <div>Card Number: <input type="number" name="card_number" id="card_number" required placeholder="16 digit card number" maxlength="16"></div>
+        <br>
+        <div>Expiry date: <input type="date" name="expiry_date" id="expiry_date" required></div>
+        <br>
+        <div>CVV: <input type="password" name="cvv" id="cvv" required placeholder="3 digit CVV" maxlength="3"></div>
+        <br>
+        <input type="submit" value="Pay Now">
+
+
+
+    </form>
+</div>
+</body>
+</html>
